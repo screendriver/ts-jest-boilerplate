@@ -1,0 +1,36 @@
+{
+  "name": "ts-jest-boilerplate",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "repository": "git@github.com:screendriver/ts-jest-boilerplate.git",
+  "author": "Christian Rackerseder <git@echooff.de>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+  },
+  "dependencies": {
+    "chalk": "2.3.0",
+    "tslib": "1.8.1",
+    "winston": "2.4.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "2.2.0",
+    "@types/jest": "21.1.9",
+    "@types/node": "8.5.2",
+    "@types/winston": "2.3.7",
+    "jest": "22.0.3",
+    "ts-jest": "22.0.0",
+    "tslint": "5.8.0",
+    "tslint-config-prettier": "1.6.0",
+    "tslint-language-service": "0.9.7",
+    "typescript": "2.6.2"
+  }
+}
